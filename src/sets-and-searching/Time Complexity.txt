@@ -1,0 +1,9 @@
+For the linear search, a linear growth is estimated. [Size time]= [10 15.3, 100 102.3, 1000 769.4 , 10000 7362.4, 100000 72908.7] supports
+the claim since a linear search has a linear growth by nature.
+
+For the initial binary search, a logarithmic growth is expected. [Size time] = [10 44.4, 100 86.3, 1000 158.4, 10000 194.4, 100000 234.7]
+A decrement in additional time per added element is noted and since the array is cut in half every iteration it answers to a 
+log2 growth.
+
+For the final binary search, a logarithmic growth is expected aswell. The nature of the search is not different, although the elements'
+generic type may change the execution time. [Size time]=[10 50.4, 100 122.7, 1000 183.1, 10000 219.2, 100000 680.9]

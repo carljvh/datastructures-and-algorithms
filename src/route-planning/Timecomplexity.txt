@@ -1,0 +1,26 @@
+HashMap operations have amortised complexity O(1) and are therefore primarily used in the code. Their operations will not be considered in the time complexity analysis.
+dividing the edges and vertices into E and V respectively, always assuming worst case scenarios for time execution provides the following:
+
+Edges:
+
+- while(n) can possibly loop through all edges, giving n complexity based on size of E set 
+
+- pq.poll(log(n)) based on binary heap in java.util, resulting in log complexity
+
+- add(log(n)) - addition to sifting binary heap has a log(n) complexity
+
+Vertices:
+
+- reversing block (n) has a linear growth due to being a single for loop
+
+- map iterator (n) has a linear growth due to the looping nature of one variable
+
+Seeing as the Vertice operations are essentially standalone, they can be added to the already present Edge operations with n*2log(n) -> nlog(n) complexity, resulting in 
+O(E*2log(E)+2V) -> O(E*log(E)+V)
+
+
+For big data sets, we can see that the total of O(E*log(E)+V) -> O(E*log(E)), yielding a final time complexity of O(n*log(n))
+
+
+
+
